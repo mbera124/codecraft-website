@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import { Link } from "react-scroll";
-// Components
 import Sidebar from "../Nav/Sidebar";
 import Backdrop from "../Elements/Backdrop";
-// Assets
 import LogoIcon from "../../assets/img/logo.jpg";
 import BurgerIcon from "../../assets/svg/BurgerIcon";
 
@@ -92,11 +90,6 @@ const BurderWrapper = styled.button`
 `;
 const UlWrapper = styled.ul`
   display: flex;
-  @media (max-width: 760px) {
-    display: none;
-  }
-`;
-const UlWrapperRight = styled.ul`
   @media (max-width: 760px) {
     display: none;
   }

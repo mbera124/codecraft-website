@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-scroll";
 // Assets
-import CloseIcon from "../../assets/svg/CloseIcon";
+import CloseIcon from "../../assets/img/logo.jpg";
 import LogoIcon from "../../assets/svg/Logo";
 
 export default function Sidebar({ sidebarOpen, toggleSidebar }) {
@@ -10,9 +10,11 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
     <Wrapper className="animate darkBg" sidebarOpen={sidebarOpen}>
       <SidebarHeader className="flexSpaceCenter">
         <div className="flexNullCenter">
+        <img src={LogoIcon} alt="service icon" style={{ width: '50px', height: '50px' }}/>;
+
           <LogoIcon />
           <h1 className="whiteColor font20" style={{ marginLeft: "15px" }}>
-            fanatic
+            CodeCraft
           </h1>
         </div>
         <CloseBtn onClick={() => toggleSidebar(!sidebarOpen)} className="animate pointer">
@@ -61,20 +63,6 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
             offset={-60}
           >
             Projects
-          </Link>
-        </li>
-        <li className="semiBold font15 pointer">
-          <Link
-            onClick={() => toggleSidebar(!sidebarOpen)}
-            activeClass="active"
-            className="whiteColor"
-            style={{ padding: "10px 15px" }}
-            to="pricing"
-            spy={true}
-            smooth={true}
-            offset={-60}
-          >
-            Pricing
           </Link>
         </li>
         <li className="semiBold font15 pointer">
