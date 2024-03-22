@@ -2,17 +2,15 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-scroll";
 // Assets
-import CloseIcon from "../../assets/img/logo.jpg";
-import LogoIcon from "../../assets/svg/Logo";
+import CloseIcon from "../../assets/svg/CloseIcon";
+import LogoIcon from "../../assets/img/logo.jpg";
 
 export default function Sidebar({ sidebarOpen, toggleSidebar }) {
   return (
     <Wrapper className="animate darkBg" sidebarOpen={sidebarOpen}>
       <SidebarHeader className="flexSpaceCenter">
         <div className="flexNullCenter">
-        <img src={LogoIcon} alt="service icon" style={{ width: '50px', height: '50px' }}/>;
-
-          <LogoIcon />
+        <img src={LogoIcon} alt="codecraft Logo" style={{ width: '100px', height: '100px' }}/> 
           <h1 className="whiteColor font20" style={{ marginLeft: "15px" }}>
             CodeCraft
           </h1>
