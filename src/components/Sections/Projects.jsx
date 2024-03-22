@@ -29,7 +29,11 @@ export default function Projects() {
               <ProjectBox
                 img={ProjectImg2}
                 title="Online Food delivery application"
-                text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
+                text="Indulge in the convenience of our Online Food Delivery Application.
+                 From gourmet delights to everyday favorites, satisfy your cravings with just a few taps.
+                  Enjoy seamless ordering, timely deliveries, and a wide range of cuisines right at your fingertips.
+                   Experience the ultimate dining experience, wherever you are, with our intuitive and user-friendly app.
+                    Order now and let the flavors come to you."
                 action={() => alert("clicked")}
               />
             </div>
